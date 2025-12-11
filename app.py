@@ -1,5 +1,6 @@
 from openai import OpenAI
 import streamlit as st
+from streamlit_js_eval import streamlit_js_eval
 
 st.set_page_config(page_title="Streamlit Chat", page_icon="")
 st.title("Interview Simulator")
@@ -149,4 +150,7 @@ if st.session_state.feedback_shown:
         ]
     )
     st.write(feedback_completion.choices[0].message.content)
+
+    if st.button("Restart interview", type='primary'):
+        streamlit_js_eval(js_expressions='parent.window.location.reload()')
 
