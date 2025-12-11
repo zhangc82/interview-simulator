@@ -26,7 +26,7 @@ def show_feedback():
 
 # only display the set of form if the set up is not complete
 if not st.session_state.setup_complete:
-    st.subheader("Personal information", divider="rainbow")
+    st.subheader("Personal information", divider="blue")
 
     if "name" not in st.session_state:
         st.session_state['name'] = ''
@@ -39,7 +39,7 @@ if not st.session_state.setup_complete:
     st.session_state['experience'] = st.text_area(label="Experience", value=st.session_state['experience'], placeholder="Describe your experience")
     st.session_state['skills'] = st.text_area(label="Skills", value=st.session_state['skills'], placeholder="List your skills")
 
-    st.subheader('Company and Position', divider='rainbow')
+    st.subheader('Company and Position', divider='blue')
 
     if "level" not in st.session_state:
         st.session_state['level'] = "Junior"
