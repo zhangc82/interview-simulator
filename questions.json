@@ -1,0 +1,17 @@
+{
+  "AWS Engineering Manager": [
+    "What is IAM principles?",
+    "What are micro services?",
+    "What are ECS vs EKS?",
+    "What is Lambda?",
+    "What is a load balancer?",
+    "What is a target group?",
+    "What is a security group?",
+    "What is a VPC?",
+    "Explain RDS vs DynamoDB.",
+    "What is NoSQL?",
+    "What is an auto scaling group?",
+    "Explain GitHub CI/CD.",
+    "What is elastic IP in AWS"
+  ]
+}
